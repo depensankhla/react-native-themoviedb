@@ -17,17 +17,19 @@ const LoginPage = () => {
   );
   const dispatch = useDispatch();
   const changeLanguage = (lng: string) => {
-    try {
-      i18next.changeLanguage(lng);
-      if (lng === LanguageType.Arabic) {
-        I18nManager.forceRTL(true);
-      } else {
-        I18nManager.forceRTL(false);
+    if (selectedLanguage !== lng) {
+      try {
+        i18next.changeLanguage(lng);
+        if (lng === LanguageType.Arabic) {
+          I18nManager.forceRTL(true);
+        } else {
+          I18nManager.forceRTL(false);
+        }
+        dispatch(saveLanguage(lng));
+        RNRestart.Restart();
+      } catch (error) {
+        console.log('Change Language error', error);
       }
-      dispatch(saveLanguage(lng));
-      RNRestart.Restart();
-    } catch (error) {
-      console.log('Change Language error', error);
     }
   };
 

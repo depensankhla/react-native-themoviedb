@@ -4,5 +4,5 @@ module.exports = {
   transformIgnorePatterns: [
     'node_modules/(?!(jest-)?react-native|@react-native|@react-navigation|react-redux)',
   ],
-  setupFiles: ["./jest.setup.js"],
+  setupFiles: ['./jest.setup.js'],
 };

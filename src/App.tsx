@@ -9,7 +9,7 @@ function App(): React.JSX.Element {
   return (
     <SafeAreaView style={styles.container}>
       <Provider store={store}>
-        <AppNavigation  />
+        <AppNavigation />
       </Provider>
     </SafeAreaView>
   );
