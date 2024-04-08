@@ -1,0 +1,13 @@
+{
+  "login": {
+    "email": "بريد إلكتروني",
+    "password": "كلمة المرور",
+    "loginButton": "تسجيل الدخول",
+    "english": "إنجليزي",
+    "arabic": "عربي"
+  },
+  "home": {
+    "homeTitle": "بيت",
+    "logout": "تسجيل خروج"
+  }
+}

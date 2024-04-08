@@ -1,0 +1,13 @@
+{
+  "login": {
+    "email": "Email",
+    "password": "Password",
+    "loginButton": "Login",
+    "english": "English",
+    "arabic": "Arabic"
+  },
+  "home": {
+    "homeTitle": "Home",
+    "logout": "Log out"
+  }
+}
