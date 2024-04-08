@@ -8,7 +8,6 @@ const HomeScreen = () => {
   const moviesList = useSelector(
     (state: RootState) => state?.homeDetails?.movies,
   );
-
   const dispatch = useDispatch<any>();
   const callFetchMovies = () => {
     dispatch(fetchMoviesData());
