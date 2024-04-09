@@ -24,6 +24,7 @@ const LoginScreenView = (props: LoginScreenViewProps) => {
     <View style={styles.container}>
       <View style={styles.loginContainer}>
         <TextInput
+          testID="emailTestId"
           style={styles.input}
           placeholder={t('login.email')}
           keyboardType="email-address"
@@ -32,6 +33,7 @@ const LoginScreenView = (props: LoginScreenViewProps) => {
           onChangeText={setEmail}
         />
         <TextInput
+          testID="passwordTestId"
           style={styles.input}
           placeholder={t('login.password')}
           secureTextEntry
@@ -39,6 +41,7 @@ const LoginScreenView = (props: LoginScreenViewProps) => {
           onChangeText={setPassword}
         />
         <Button
+          testID="loginButtonTestId"
           title={t('login.loginButton')}
           disabled={!validateEmail(email) || !validatePassword(password)}
           onPress={handleLogin}
