@@ -25,7 +25,10 @@ const LoginScreenView = (props: LoginScreenViewProps) => {
       <View style={styles.loginContainer}>
         <TextInput
           testID="emailTestId"
-          style={styles.input}
+          style={[
+            styles.input,
+            {textAlign: isEnglishSelected ? 'left' : 'right'},
+          ]}
           placeholder={t('login.email')}
           keyboardType="email-address"
           autoCapitalize="none"
@@ -34,7 +37,10 @@ const LoginScreenView = (props: LoginScreenViewProps) => {
         />
         <TextInput
           testID="passwordTestId"
-          style={styles.input}
+          style={[
+            styles.input,
+            {textAlign: isEnglishSelected ? 'left' : 'right'},
+          ]}
           placeholder={t('login.password')}
           secureTextEntry
           value={password}

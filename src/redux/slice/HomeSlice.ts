@@ -1,5 +1,5 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
-import {BaseURL} from '../../constants/App.constants';
+import {AccessToken, BaseURL} from '../../constants/App.constants';
 import {HomeDetails} from '../../types/Store.type';
 import {RootState} from '../store';
 
@@ -15,7 +15,14 @@ export const fetchMoviesData = createAsyncThunk<
   const selectedLanguage: string = state.loginDetails?.selectedLanguage;
   try {
     const response = await fetch(
-      `${BaseURL}/3/movie/popular?api_key=b836aab3bd57fb6dff4b046cce00391b&page=${page}&language=${selectedLanguage}`,
+      `${BaseURL}/3/movie/popular?page=${page}&language=${selectedLanguage}`,
+      {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+          Authorization: `Bearer ${AccessToken}`,
+        },
+      },
     );
     return await response.json();
   } catch (error) {
