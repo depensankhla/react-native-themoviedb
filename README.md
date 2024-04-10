@@ -19,19 +19,15 @@ react-redux & @reduxjs/toolkit & react-native-restart: for state management <br>
 ![5](https://github.com/depensankhla/react-native-themoviedb/assets/16592486/8e26d905-3a8a-43b7-9f3e-e7bf3b3a6c34)
 
 # How to Use
-```bash
+
 ## Step 1: Start the Metro Server
 
 First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
-npm start
+To start Metro, run the following command from the _root_ of your React Native project:<br>
+**npm start**
 
 ## Step 2: Start your Application
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ app:
-npm run android
-
-This is one way to run your app — you can also run it directly from within Android Studio respectively.
-
-
+Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start _Android_ app:<br>
+**npm run android**
