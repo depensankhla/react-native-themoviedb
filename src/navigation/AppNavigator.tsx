@@ -5,12 +5,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {useDispatch, useSelector} from 'react-redux';
 import {useTranslation} from 'react-i18next';
 import i18next from 'i18next';
+
 import HomeScreen from '../screens/homeScreen/HomeScreen.container';
 import LoginScreen from '../screens/loginScreen/LoginScreen.container';
 import {logout} from '../redux/slice/loginSlice';
 import styles from './AppNavigator.style';
 import {LanguageType} from '../constants/App.constants';
-import {RootState} from '../types/Store.type';
+import {RootState} from '../redux/store';
 
 const Stack = createNativeStackNavigator();
 function AppNavigation() {

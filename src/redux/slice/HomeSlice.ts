@@ -1,6 +1,7 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
 import {BaseURL} from '../../constants/App.constants';
-import {HomeDetails, RootState} from '../../types/Store.type';
+import {HomeDetails} from '../../types/Store.type';
+import {RootState} from '../store';
 
 export const fetchMoviesData = createAsyncThunk<
   any,

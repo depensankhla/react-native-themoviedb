@@ -6,7 +6,7 @@ import i18next from 'i18next';
 import LoginScreenView from './LoginScreen.view';
 import {saveDetails, saveLanguage} from '../../redux/slice/loginSlice';
 import {LanguageType} from '../../constants/App.constants';
-import {RootState} from '../../types/Store.type';
+import {RootState} from '../../redux/store';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');

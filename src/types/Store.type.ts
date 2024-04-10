@@ -38,8 +38,3 @@ export type LoginScreenViewProps = {
   handleLogin: () => void;
   changeLanguage: (lang: string) => void;
 };
-
-export type RootState = {
-  loginDetails: LoginDetails;
-  homeDetails: HomeDetails;
-};
