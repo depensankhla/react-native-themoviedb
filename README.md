@@ -8,7 +8,7 @@ Movie titles are displayed based on the language selected during login.<br>
 # Major Packages
 react-i18next & i18next : for language translate.<br>
 react-navigation & react-navigation/stack ... : for navigation between screens.<br>
-react-redux & @reduxjs/toolkit & react-native-restart: for state management <br>
+react-redux & @reduxjs/toolkit : for state management <br>
 
 **Screenshot**
 
