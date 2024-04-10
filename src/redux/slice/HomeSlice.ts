@@ -37,7 +37,7 @@ const initialState: HomeDetails = {
   error: undefined,
 };
 
-const dataSlice = createSlice({
+const homeSlice = createSlice({
   name: 'homeDetails',
   initialState,
   reducers: {},
@@ -58,4 +58,4 @@ const dataSlice = createSlice({
       });
   },
 });
-export default dataSlice.reducer;
+export default homeSlice.reducer;
